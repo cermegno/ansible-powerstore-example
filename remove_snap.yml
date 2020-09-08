@@ -1,0 +1,21 @@
+---
+- name: Create a host and a volume
+  hosts: localhost
+  connection: local
+
+  vars_files:
+    - creds.yml
+    - prov_details.yml
+    - snap_details.yml
+
+  tasks:
+  - name: Remove snapshot
+    dellemc_powerstore_snapshot:
+      array_ip: "{{ target }}"
+      user: "{{ user }}"
+      password: "{{ password }}"
+      verifycert: False
+      snapshot_name: "{{ snapshot_name }}"
+      volume: "{{ volume }}"
+      state: absent
+    register: snap_details

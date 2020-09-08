@@ -1,0 +1,5 @@
+# Connection details for the PowerStore array
+
+target: "192.168.1.1"
+user: "admin"
+password: "s3cr3t"

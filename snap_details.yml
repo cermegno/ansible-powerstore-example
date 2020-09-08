@@ -1,0 +1,6 @@
+snapshot_name: "demo01_08-Sept-2020_snap01"
+volume: "demo01_vol1"
+description: "Snap before software update"
+desired_retention: 1
+retention_unit: "days"
+
