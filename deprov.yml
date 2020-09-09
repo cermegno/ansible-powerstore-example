@@ -1,5 +1,5 @@
 ---
-- name: Create a host and a volume
+- name: Remove host and volume
   hosts: localhost
   connection: local
 

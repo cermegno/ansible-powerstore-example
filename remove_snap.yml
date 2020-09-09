@@ -1,5 +1,5 @@
 ---
-- name: Create a host and a volume
+- name: Remove a Snapshot
   hosts: localhost
   connection: local
 
