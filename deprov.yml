@@ -4,7 +4,8 @@
   connection: local
 
   vars_files:
-    - req1234.yml
+    - creds.yml
+    - prov_details.yml
 
   tasks:
   - name: Unmap volume
